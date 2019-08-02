@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Book your Stay at the Pluralsight Hotel</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="booking.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.4/themes/ui-darkness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="booking.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h1>New Booking</h1>
+            <form>
+                <div id="validation-summary"></div>
+				
+                <h2>About Your Stay</h2><br />
+				
+                <div class="field field-inline">
+                    <label class="date-label" for="date-from">Stay from *</label>
+                    <input class="datepicker datepicker-first" type="text" id="date-from" placeholder="mm/dd/yyyy" />
+                </div>
+				
+                <div class="field field-inline">
+                    <label class="date-label" for="date-to">to *</label>
+                    <input class="datepicker" type="text" id="date-to" placeholder="mm/dd/yyyy" />
+                </div>
+				
+                <div class="field">
+                    <label for="location">Location *</label>
+                    <select id="location">
+                        <option></option>
+                        <optgroup label="England">
+                            <option>Birmingham</option>
+                            <option>Leeds</option>
+                            <option>Leicester</option>
+                            <option>Liverpool</option>
+                            <option>London</option>
+                            <option>Reading</option>
+                        </optgroup>
+                        <optgroup label="Northern Ireland">
+                            <option>Belfast</option>
+                        </optgroup>
+                        <optgroup label="Scotland">
+                            <option>Aberdeen</option>
+                            <option>Dundee</option>
+                            <option>Edinburgh</option>
+                            <option>Glasgow</option>
+                        </optgroup>
+                    </select>
+                </div>
+				
+                <div class="field activities">
+					<fieldset>
+						<legend class="checkboxes-label">What additional activities do you want to book?</legend>
+						<div>
+							<input type="checkbox" id="activities-gym" data-price="10">
+							<label for="activities-gym">Gym Access <span class="price">£10</span></label>
+						</div>
+						<div>
+							<input type="checkbox" id="activities-breakfast" data-price="10">
+							<label for="activities-breakfast">Breakfast <span class="price">£10</span></label>
+						</div>
+						<div>
+							<input type="checkbox" id="activities-spa" data-price="50">
+							<label for="activities-spa">Spa Day <span class="price">£50</span></label>
+						</div>
+						<div>
+							<input type="checkbox" id="activities-spa-two" data-price="90">
+							<label for="activities-spa-two">Spa Day For Two <span class="price">£90</span></label>
+						</div>
+						<div>
+							<input type="checkbox" id="activities-golf" data-price="80">
+							<label for="activities-golf">Golf Pass <span class="price">£80</span></label>
+						</div>
+					</fieldset>
+                </div>
+				
+                <div class="field" id="breakfast-options" style="display:none;">
+                    <label for="breakfast-time">Desired Breakfast Time</label>
+                    <input id="breakfast-time" type="text" placeholder="eg. 10:15" />
+                    <p>
+                        <em>
+                            The restaurant is open from 8am until 11am for breakfast
+                        </em>
+                    </p>
+                    
+                </div>
+                <div class="field">
+                    <label for="requests">Special Requests</label>
+                    <select multiple id="requests">
+                        <option data-price="40">Champagne on Arrival <span class="price">£40</span></option>
+                        <option data-price="30">Fresh Flowers <span class="price">£30</span></option>
+                        <option data-price="20">Souvenir Teddy <span class="price">£20</span></option>
+                        <option data-price="10">Chocolate Selection <span class="price">£10</span></option>
+                    </select>
+                </div>
+				
+                <h2>Your Details</h2>
+				
+                <div class="field">
+                    <label for="details-name">Name *</label>
+                    <input type="text" id="details-name" />
+                </div>
+                <div class="field">
+                    <label for="details-email">Email Address *</label>
+                    <input type="text" id="details-email" />
+                </div>
+                <div class="field">
+                    <label for="details-tel">Telephone Number</label>
+                    <input type="text" id="details-tel" />
+                </div>
+				
+				<h2>Payment</h2>
+				
+                <div class="field">
+                    <label for="details-card-type">Card Type *</label>
+                    <select id="details-card-type">
+                        <option></option>
+                        <option>Visa Credit</option>
+                        <option>Visa Debit</option>
+                        <option>Mastercard</option>
+                        <option>Amex</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="details-card-number">Card Number *</label>
+                    <input type="text" id="details-card-number" />
+                </div>
+                <div class="field">
+                    <label for="details-card-expiry-month">Expiry Date *</label>
+                    <select id="details-card-expiry-month">
+                        <option></option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <select id="details-card-expiry-year">
+                        <option></option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                    </select>
+                </div>
+                <div class="total-price">
+                    <span class="total-price-label">Total Price</span>
+                    <span class="total-price-value">£109.99</span>
+                </div>
+                <a href="#" id="cancel" class="button">Cancel</a>
+                <a href="#" id="submit-form" class="button">Book</a>
+            </form>
+        </main>
+		<aside class="side">
+			<p>Please complete this form to book a room in one of our luxury hotels.</p>
+            <p>Bookings may be cancelled up to 30 days in advance of your stay.
+            <br/>Want to know more? <a href="">Click here</a></p>
+            <p>By completing this form, you agree to our Terms and Conditions and Privacy Policy: <a href="">Read more</a></p>
+        </aside>
+		<div class="clear"></div>
+		<aside class="search">
+            <input type="text" /><a href="#"><img src="images/search.png" alt="Search" /></a>
+        </aside>        
+    </div>
+</body>
+</html>
+
+
