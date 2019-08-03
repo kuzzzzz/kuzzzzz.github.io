@@ -17,14 +17,14 @@ html {
   line-height: 1.4;
 }
 body {
-  background: #000
+  background: #000;
 }
 p{
-  color: #fff
+  color: #fff;
 }
 h1{
   text-align: center;
-  color:#fff
+  color:#fff;
 }
 /*
  * Remove text-shadow in selection highlight:
