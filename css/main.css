@@ -17,14 +17,17 @@ html {
   line-height: 1.4;
 }
 body {
-  background: #000;
+  background: #fff;
 }
 p{
-  color: #fff;
+  color: #000;
 }
 h1{
   text-align: center;
-  color:#fff;
+  color:#000;
+}
+.social-icons{
+    text-align: center;
 }
 /*
  * Remove text-shadow in selection highlight:
