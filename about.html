@@ -22,12 +22,27 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="is-preload">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
+
+  <nav id="nav">
+    <ul class="links">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <ul class="icons">
+      <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+    </ul>
+  </nav>
+
 
   <h1 style = " font-family: 'Princess Sofia', cursive;">
     kuzzz blog
@@ -45,6 +60,54 @@
      i'm in the middle of a challenge so i won't have time to stlye this page but im going to try and
      a link to the page i am working on
   </p>
+
+  <footer id="footer">
+    <section>
+      <form method="post" action="#">
+        <div class="fields">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="3"></textarea>
+          </div>
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="Send Message" /></li>
+        </ul>
+      </form>
+    </section>
+    <section id ='contact' class="split contact">
+      <section class="alt">
+        <h3>Address</h3>
+        <p>1234 Somewhere Road #87257<br />
+        Nashville, TN 00000-0000</p>
+      </section>
+      <section>
+        <h3>Phone</h3>
+        <p><a href="#">(000) 000-0000</a></p>
+      </section>
+      <section>
+        <h3>Email</h3>
+        <p><a href="#">info@untitled.tld</a></p>
+      </section>
+      <section>
+        <h3>Social</h3>
+        <ul class="icons alt">
+          <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+      </section>
+    </section>
+  </footer>
 </div>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
