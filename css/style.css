@@ -1,0 +1,177 @@
+/*
+ * General Styles
+*/
+
+
+body {
+  background: url('../img/2.png');
+  font-family: 'Open Sans', arial, sans-serif;
+
+  /* Full Page Background Receipe */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ ul li {
+   list-style: none;
+   color:black;
+   font-family: 'Roboto Condensed', sans-serif;
+   padding: 0;
+
+} 
+
+/*
+ * Heading Styles
+*/
+
+.nav {
+  display: flex;
+  /* justify-content: flex-end; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #7a5e03;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .hero img {
+    position: relative;
+    top: 30px;
+  }
+  .nav-list {
+    margin: 0 ;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.1rem;
+  padding: 5px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav-list a:hover {
+  background: blue;
+}
+
+
+h1, h2 {
+  font-family: 'Lobster', cursive;
+  color: #e22f8f;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/*
+ * Container Styles
+*/
+
+
+.container {
+  width: 600px;
+  margin: 100px auto;
+}
+
+
+/*
+ * Hero Styles
+*/
+
+.hero {
+  line-height: 0;
+}
+
+.hero img {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+/*
+ * Section Styles
+*/
+
+section.intro, section.contact {
+  padding: 40px;
+}
+
+section.intro {
+  background: #FFF;
+}
+
+section.contact {
+  background: #e6e9ea;
+}
+
+
+/*
+ * Aside Styles
+*/
+
+aside.left {
+  float: left;
+}
+
+aside.right {
+  float: right;
+}
+
+aside {
+  margin-right: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+
+
+
+
+
+
+
+
+
+
