@@ -1,9 +1,9 @@
 /* Custom properties/variables  */
 :root {
   --main-white: #f0f0f0;
-  --main-red: #7a5e03;
-  --main-blue: #2b54ad;
-  --main-gray: #802532;
+  --main-red: #e2ddd3de;
+  --main-blue: #0a0a0ae8;
+  --main-gray: #4b4647;
 }
 
 /* Base reset */
@@ -81,6 +81,7 @@ h2 {
   font-family: 'Sriracha', cursive;;
   font-weight: 700;
   text-align: center;
+  color: rgb(116, 136, 146);
 }
 
 h1 {
@@ -114,7 +115,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
+  background: var(--main-gray);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
