@@ -1,0 +1,23 @@
+List of project to add to home page
+
+1).a https://memories-dancy.herokuapp.com/posts
+  .b https://github.com/kuzzzzz/memories
+
+2).a https://niaja-amazon.herokuapp.com/
+  .b https://github.com/kuzzzzz/Thrift-it
+
+3).a https://happy-birthday-onome.herokuapp.com/
+  .b https://github.com/kuzzzzz/bef13-node
+
+4).a https://kuzzzzz.github.io/JavaScript-Projects/
+  .b https://github.com/kuzzzzz/JavaScript-Projects
+
+5).a https://ninja-smoothies.herokuapp.com/
+  .b https://github.com/kuzzzzz/node-jwt
+
+
+change navigation to this 
+https://codepen.io/bosworthco/details/RjBvgw/     
+
+and this https://codepen.io/z-/pen/OBPJKK
+
